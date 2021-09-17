@@ -67,7 +67,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_a"
-            // Выбираем тип вводимых данных. (Нужная клавиатура на смартфоне вылезает)
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
