@@ -30,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/hypotenuse" />
 
+    // Это невидимая линия, относительно которой можно выстраивать виджеты разметки
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
@@ -50,6 +51,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
+    // Это InputLayout - Более красивый чем ЭдитТекст, становится выше клавиатуры ннабора на смартфоне, можно проверки содержимого и выдавать варнинги.
+    // Он состоит из двух элементов
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout1"
         android:layout_width="0dp"
@@ -64,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_a"
+            // Выбираем тип вводимых данных. (Нужная клавиатура на смартфоне вылезает)
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
